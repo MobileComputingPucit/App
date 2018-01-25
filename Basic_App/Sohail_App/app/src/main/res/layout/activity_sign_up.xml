@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mzainnaseer.sohail_app.sign_up">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/menu_heading_textView_client_signup_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ACOUNT SETUP"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:id="@+id/menu_description_textView_client_signup_xml"
+                android:layout_below="@id/menu_heading_textView_client_signup_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter email and password you'd like to use for logging"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_margin="10dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/main_image_layout_relativeLayout_client_signup_xml"
+                android:layout_below="@id/menu_description_textView_client_signup_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/setup_image_imageView_client_signup_xml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="30dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/fields_layout_relativeLayout_client_signup_xml"
+                android:layout_below="@id/main_image_layout_relativeLayout_client_signup_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/email_text_textView_client_signup_xml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="#000"
+                    android:layout_marginTop="20dp"
+                    />
+                <EditText
+                    android:id="@+id/email_editText_client_signup_xml"
+                    android:layout_below="@id/email_text_textView_client_signup_xml"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    android:alpha="0.5"/>
+
+                <TextView
+                    android:id="@+id/phone_text_textView_client_signup_xml"
+                    android:layout_below="@id/email_editText_client_signup_xml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Phone"
+                    android:layout_marginTop="20dp"
+                    />
+                <EditText
+                    android:id="@+id/phone_editText_client_signup_xml"
+                    android:layout_below="@id/phone_text_textView_client_signup_xml"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="phone"
+                    android:textColor="#000"
+                    android:alpha="0.5"/>
+
+                <TextView
+                    android:id="@+id/password_text_textView_client_signup_xml"
+                    android:layout_below="@id/phone_editText_client_signup_xml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Password"
+                    android:layout_marginTop="20dp"
+                    />
+                <EditText
+                    android:id="@+id/password_editText_client_signup_xml"
+                    android:layout_below="@id/password_text_textView_client_signup_xml"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textPassword"
+                    android:textColor="#000"
+                    android:alpha="0.5"/>
+
+                <TextView
+                    android:id="@+id/confirm_password_text_textView_client_signup_xml"
+                    android:layout_below="@id/password_editText_client_signup_xml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Confirm password"
+                    android:layout_marginTop="20dp"
+                    />
+                <EditText
+                    android:id="@+id/confirm_password_editText_client_signup_xml"
+                    android:layout_below="@id/confirm_password_text_textView_client_signup_xml"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textPassword"
+                    android:textColor="#000"
+                    android:layout_marginBottom="100dp"
+                    android:alpha="0.5"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/next_btn_layout_relativeLayout_client_signup_xml"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        >
+        <TextView
+            android:id="@+id/next_btn_button_client_signup_xml"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:text="Sign Up"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="@drawable/custom_red_color"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>
